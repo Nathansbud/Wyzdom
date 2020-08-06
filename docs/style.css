@@ -1,0 +1,25 @@
+body {
+    background: #1A2C5E;
+    color: #C6C6C6;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: lightblue;
+}
+
+ul.students {
+    padding-left: 25%;
+}
+
+
+ul.students > li {
+    font-size: larger;  
+}
+  
+.students li ul > li {
+    all: initial;
+}
