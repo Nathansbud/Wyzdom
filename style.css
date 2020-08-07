@@ -22,4 +22,6 @@ ul.students > li {
   
 .students li ul > li {
     all: initial;
+    display: list-item;
+    color: #C6C6C6;
 }
