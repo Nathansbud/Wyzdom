@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='start' class='state'>
+        <h1>Welcome to the Coding Quiz!<h1>
+
+        </h2>You will have <span class='time'></span> to answer <span class='num-questions'></span> questions!</h1>
+        <p>Click <span class='emphasize'>Start</span> to Begin</p>
+        <button id='start-button'>Start</button>
+    </div>
+    <div id='quiz' class='state'>
+        <h2 class='timer time' id='timer'></h2>
+    </div>
+    <div id='end' class='state'>
+        <h2>You finished the quiz with a score of <span class='score'></span>/<span class='num-questions'></span> with <span class='timer'></span> remaining.</h2> 
+        
+        <label for='initials'>Name</label>
+        <input type="text" name='initials' id='initials'>
+        <input type='submit' value='Submit Score'><button id='clear'>Clear Scores</button>
+        <ul id='high-scores'>
+
+        </ul>
+        <button id='restart'>Restart</button>
+    </div>
+    
+
+    <script src="quiz.js"></script>
+</body>
+</html>

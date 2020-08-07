@@ -1,0 +1,11 @@
+#quiz {
+    display: none;
+}
+
+.question-div:not(:first-of-type), .state:not(:first-of-type) {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
