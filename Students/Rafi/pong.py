@@ -84,7 +84,7 @@ def setup():
     gameBall = Ball(width / 2, height / 2, 25)
 
 def draw():
-    background(Color('black'))
+    background(Color('#00ffff'))
     text(f"Score: {leftPaddle.score}-{rightPaddle.score}", (width/2 - text_width(f"Score: {leftPaddle.score}-{rightPaddle.score}") / 2, 20))
 
     leftPaddle.draw()
