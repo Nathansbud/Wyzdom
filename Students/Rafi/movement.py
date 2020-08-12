@@ -17,12 +17,13 @@ def draw():
     if up: rectY -= 1
     if down: rectY += 1
 
+
 def key_released(event):
     global left, right, up, down
-    if event.key.name == 'A': left = False
-    if event.key.name == 'D': right = False
-    if event.key.name == 'W': up = False
-    if event.key.name == 'S': down = False
+    if event.key == 'A': left = False
+    if event.key == 'D': right = False
+    if event.key == 'W': up = False
+    if event.key == 'S': down = False
 
 def key_pressed(event):
     global left, right, up, down
