@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+body > div:not(#config) {
+    display: none;
+}

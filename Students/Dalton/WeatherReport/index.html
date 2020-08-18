@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <div id='config'>
+        <form id='search' action="">
+            <label for='name'>City: </label>
+            <input type="text" id='name'>
+            <input id='submit' type="submit" value="Get Forecast">
+        </form>
+    </div>
+    <div id='report'>
+        <div id='current'>
+            <h2 id='city'></h2>
+            <h2 id='today'></h2>
+            <div>
+                <h3>Forecast</h3>
+                <img id='current-type' src="">
+            </div>
+            <h2>Temperature: <span id='temperature'></h2>
+            <h3>Humidity: <span id='humidity'></span></h3>
+            <h3>Wind Speed: <span id='wind'></span></h3>
+            <div id='uv-index'>
+                <h3>UV Index: <span id='uv' class='favorable'></span></h3> 
+            </div>
+        </div>
+        <div id='forecast'>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
