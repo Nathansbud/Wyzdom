@@ -33,8 +33,10 @@ configForm.onsubmit = async (e) => {
     } else {
         try {
             try {
+                //do a single fetch call in order to check if an error is thrown
                 const currentCheck = await fetch(buildEndpoint('current', {city: cityValue}))
-                
+
+
                 const current = await currentCheck.json()
                 const forecast = await (await fetch(buildEndpoint('forecast', {city: cityValue})))?.json()
                 const uvi = await (await fetch(buildEndpoint('uvi', {lon: current.coord.lon, lat: current.coord.lat})))?.json()
