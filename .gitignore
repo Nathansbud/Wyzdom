@@ -7,3 +7,4 @@ venv/
 .vscode/settings.json
 
 Students/Scott/data/images/
+node_modules/
