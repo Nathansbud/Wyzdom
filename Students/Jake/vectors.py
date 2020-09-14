@@ -3,7 +3,7 @@ observer = input("Input the position of an observer in the form - x, y, z: ")
 pa = input("Input the position of some point A in the form - x, y, z: ")
 pb = input("Input the position of some point B in the form - x, y, z: ")
 
-vo, va, vb = [float(p.strip()) for p in [observer.split(","), pa.split(","), pb.split(",")]]
+vo, va, vb = [[float(n.strip()) for n in p] for p in [observer.split(","), pa.split(","), pb.split(",")]]
 
 def dot(a, b):
     return sum([an + bn for an, bn in zip(a, b)])
